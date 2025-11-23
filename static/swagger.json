@@ -42,7 +42,7 @@
       }
     },
     "/login": {
-      "post": {
+      "get": {
         "summary": "Login para gerar token JWT",
         "description": "Gera um token JWT para autenticação.",
         "responses": {
@@ -61,7 +61,7 @@
       }
     },
     "/protected": {
-      "get": {
+      "post": {
         "summary": "Rota protegida",
         "description": "Acessa uma rota protegida. Requer token JWT.",
         "security": [

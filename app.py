@@ -22,7 +22,7 @@ def home():
 def get_items():
     return jsonify(items=["item1", "item2", "item3"])
 
-@app.route('/login', methods=['GET '])
+@app.route('/login', methods=['GET'])
 def login():
     access_token = create_access_token(identity="user")
     return jsonify(access_token=access_token)

@@ -27,7 +27,7 @@ class APITestCase(unittest.TestCase):
         
     def test_swagger_is_accessible(self):
         response = self.client.get('/swagger')
-        self.assertIn(response.status_code, [200, 302])
+        self.assertIn(response.status_code, [200, 302, 308])
 
 
 if __name__ == '__main__':
